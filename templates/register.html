@@ -1,0 +1,10 @@
+{% from "_formhelpers.html" import render_field %}
+<form method=post>
+  <dl>
+    {{ render_field(form.votername) }}
+    {{ render_field(form.cnic) }}
+    {{ render_field(form.fingerprint) }}
+    {{ render_field(form.qrCode) }}
+  </dl>
+  <p><input type=submit value=Register>
+</form>

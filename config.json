@@ -1,0 +1,19 @@
+{
+    "params":
+    {
+        "local_server" : "True",
+        "local_uri" : "mysql://root:@localhost/evms",
+        "prod_uri" : "mysql://root:@localhost/evms",
+        "fb_uri" : "https://facebook.com/",
+        "insta_uri" : "https://instagram.com",
+        "twitter_uri" : "https://twitter.com",
+        "linkedin_uri" : "https://linkedin.com/in/m-farooq287",
+        "username" : "Pola Record",
+        "myGmail" : "polarecord111@gmail.com",
+        "password" : "Polamonib1",
+        "admin_name" : "Farooq",
+        "admin_cnic" : "3450271618869",
+        "admin_fingerprint" : "1231231",
+        "admin_qrCode" : "10827129309434502716188691"
+    }
+}

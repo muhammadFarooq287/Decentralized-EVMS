@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block body %}
+  <div style="text-align: center;">
+  
+    <p style="font-size: 30px; color: rgb(255, 255, 255);">Admin</p>
+    <p style="font-size: 30px; color: rgb(145, 71, 2);"> Admin Login</p>
+    <form onsubmit="return validateForm()">
+      <label for="fingerprint" style="color:rgb(0,0,0); font-size: 20px";>Fingerprint:</label>
+      <input type="text" id="fingerprint" name="fingerprint" placeholder=" Scan Your Fingerprint" required>
+      <br>
+      <button type="submit" class="login-btv">NEXT</button>
+  
+  
+    </form>
+  
+    <script>
+      function validateForm() {
+        const Fingerprint = document.getElementById("fingerprint").value;
+
+        if (!Fingerprint.match(/^\d{7,30}$/)) {
+          alert("fingerprint must be a 7-30-digit number.");
+          document.getElementById("fingerprint").value = "";
+          document.getElementById("fingerprint").focus();
+          return false;
+        }
+        else {
+          window.location.href = '  Qr';
+        }
+
+        return false;
+      }
+    </script>
+  </div>
+
+  <!--about section start -->
+  {% endblock %}

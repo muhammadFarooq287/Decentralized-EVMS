@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- basic -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- mobile metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <!-- site metas -->
+  <title>Voter Login</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+ <!-- bootstrap css -->
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename ='css/bootstrap.min.css')}}">
+<!-- style css -->
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename ='css/style.css')}}">
+<!-- Responsive-->
+<link rel="stylesheet" href="{{url_for('static',filename ='css/responsive.css')}}">
+<!-- fevicon -->
+<link rel="icon" href="{{url_for('static',filename ='images/logo.png')}}" type="image/gif" />
+<!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="{{url_for('static',filename ='css/jquery.mCustomScrollbar.min.css')}}">
+<!-- Tweaks for older IEs-->
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<!-- owl stylesheets --> 
+<link rel="stylesheet" href="{{url_for('static',filename ='css/owl.carousel.min.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename ='css/owl.theme.default.min.css')}}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+
+</head>
+
+<body>
+  <!--header section start -->
+  <div class="logo"><a href="home"><img src="{{url_for('static',filename ='images/logo.png')}}"></a></div>
+  <style>
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    input[type="text"] {
+      width: 15em;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="url"],
+    textarea {
+      background-color: #f1f1f1;
+      border: none;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="password"]:focus,
+    input[type="search"]:focus,
+    input[type="tel"]:focus,
+    input[type="url"]:focus,
+    textarea:focus {
+      background-color: #fff;
+      border: 2px solid #4285f4;
+      outline: none;
+    }
+
+    input[type="submit"],
+    button {
+      background-color: #4285f4;
+      border: none;
+      color: #fff;
+      padding: 12px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 8px 0;
+      cursor: pointer;
+    }
+  </style>
+  <div style="text-align: center;">
+    <p style="font-size: 30px; color: rgb(192, 77, 10);">Voter Login</p>
+    <form action = "/voter" method="POST">
+      <label for="username" style="color: rgb(7,7,7); display: block; margin-bottom: 10px;">Name:</label>
+      <input type="text" id="username" name="username" placeholder="Enter Your name" required
+        style="display: block;  margin-bottom: 20px;">
+      <label for="cnic" style="color: rgb(6,6,6); display: block; margin-bottom: 10px;">Cnic:</label>
+      <input type="text" id="cnic" name="cnic" placeholder="Enter a Cnic" required
+        style="display: block;  margin-bottom: 20px;">
+      <label for="qr-code" style="color: rgb(6,5,5); display: block; margin-bottom: 10px;">QrCode:</label>
+      <input type="text" id="qr-code" name="qrCode" placeholder="Scan your Cnic Qr code" required
+        style="display: block; margin-bottom: 20px;">
+      <button type="submit" class="login-btx" id="add-user-btn" style="display: block; margin-top: 20px;">Login</button>
+    </form>
+  </div>
+
+</body>
+
+</html>

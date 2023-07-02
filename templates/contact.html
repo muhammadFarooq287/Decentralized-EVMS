@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- site metas -->
+<title>  EVMS</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">	
+<!-- bootstrap css -->
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename ='css/bootstrap.min.css')}}">
+<!-- style css -->
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename ='css/style.css')}}">
+<!-- Responsive-->
+<link rel="stylesheet" href="{{url_for('static',filename ='css/responsive.css')}}">
+<!-- fevicon -->
+<link rel="icon" href="{{url_for('static',filename ='images/logo.png')}}" type="image/gif" />
+<!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="{{url_for('static',filename ='css/jquery.mCustomScrollbar.min.css')}}">
+<!-- Tweaks for older IEs-->
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<!-- owl stylesheets --> 
+<link rel="stylesheet" href="{{url_for('static',filename ='css/owl.carousel.min.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename ='css/owl.theme.default.min.css')}}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+
+</head>
+<body>
+	<!--header section start -->
+	<div class="header_section">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2">
+					<div class="logo"><a href="home"><img src="{{url_for('static',filename ='images/logo.png')}}"></a></div>
+				</div>
+				<div class="col-sm-6">
+					<div class="menu-area">
+                    <nav class="navbar navbar-expand-lg ">
+                        <!-- <a class="navbar-brand" href="#">Menu</a> -->
+                        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                               <li class="nav-item active">
+                                <a class="nav-link" href="home">Home<span class="sr-only">(current)</span></a> </li>
+                               <li class="nav-item">
+                                <a class="nav-link" href="about">About</a></li>
+                               <li class="nav-item">
+                                <a class="nav-link" href="member">Members</a></li>
+                               <li class="#" href="#">
+      	                        <a class="nav-link" href="project">Project</a></li>
+                               <li class="nav-item" href="#">
+      	                        <a class="nav-link" href="contact">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+          </div>
+				</div>
+				<div class="col-sm-4">
+            <ul class="top_button_section">
+               <li><a class="login-bt active" href="Admin">Register</a></li>
+            </ul>
+					</div>
+			</div>
+
+    <div class="row">
+      <div class="banner_section layout_padding">
+      <section>
+         <div id="main_slider" class="section carousel slide banner-main" data-ride="carousel">
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                    <div class="container">
+                     <div class="row marginii">
+                        <div class="col-md-5 col-sm-12">
+                           <div class="carousel-sporrt_text ">
+                              <h1 class="banner_taital">Safe and Secure Elections</h1>
+                    <p class="lorem_text">Ensuring safe and secure elections is crucial for upholding democratic values and maintaining the integrity of the
+                  electoral process.</p>
+                    <div class="ads_bt"><a href="Admin">Admin</a></div>
+                    <div class="contact_bt"><a href="voter">Voter</a></div>
+                           </div>
+                        </div>
+                        <div class="col-md-7 col-sm-12">
+                           <div class="img-box">
+                              <figure><img src="{{url_for('static',filename ='images/banner-img1.png')}}" style="max-width: 100%;"/></figure>
+                           </div>
+                        </div>
+                    </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                    <div class="container">
+                     <div class="row marginii">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                           <div class="carousel-sporrt_text ">
+                              <h1 class="banner_taital">Electronic Voting Management System</h1>
+                    <p class="lorem_text">Introducing our advanced electronic voting management system, designed<br> to streamline the voting process and enhance
+                  accuracy and efficiency. Our system includes ,secure authentication protocols, and real-time data
+                  tracking  <br>for ensuring a transparent and reliable voting experience for all
+                  stakeholders.</p>
+                    <div class="ads_bt"><a href="Admin">Admin</a></div>
+                    <div class="contact_bt"><a href="voter">Voter</a></div>
+                           </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                           <div class="img-box">
+                              <figure><img src="{{url_for('static',filename ='images/banner-img1.png')}}" style="max-width: 100%;"/></figure>
+                           </div>
+                        </div>
+                    </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+    </div>
+    </div>
+
+		</div>
+        <!--header section end -->
+      </div>
+    </div>
+      <!--banner section end -->
+      	<!--footer section start -->
+	<div class="footer_section layout_padding">
+		<div class="container">
+			<div class="row">
+			    <div class="col-sm-3">
+				    <div class="footer_contact">Contact Us</div>
+			    </div>
+			    <div class="col-sm-3">
+				    <div class="location_text"><img src="{{url_for('static',filename ='images/map-icon.png')}}"><span style="padding-left: 10px;">UET NEW CAMPUS</span></div>
+			    </div>
+			    <div class="col-sm-3">
+			    	<div class="location_text"><img src="{{url_for('static',filename ='images/call-icon.png')}}"><span style="padding-left: 10px;">Call us: 0312-5913705</span></div>
+			    </div>
+			    <div class="col-sm-3">
+			    	<div class="location_text"><img src="{{url_for('static',filename ='images/mail-icon.png')}}"><span style="padding-left: 10px;">Email us: 326Muhammadfarhan@gmail.com</span></div>
+			    </div>
+		    </div>
+		    <div class="enput_bt">
+		    	<div class="row">
+		    		<div class="col-md-6">
+		    			<div class="input_main">
+                       <div class="container">
+                          <form action="/home" method="POST">
+                            <div class="form-group">
+                              <input type="text" class="email-bt" placeholder="NAME" name="Name">
+                            </div>
+                            <div class="form-group">
+                              <input type="text" class="email-bt" placeholder="EMAIL" name="Email">
+                            </div>
+                            <div class="form-group">
+                              <input type="text" class="email-bt" placeholder="PHONE NUMBER" name="phoneNo">
+                            </div>
+                           <div class="form-group">
+                            <textarea class="massage-bt" placeholder="MASSAGE" rows="5" id="comment" name="msg"></textarea>
+                          </div>
+                       </div> 
+                       <div class="send_bt_main">
+                        <div class="left">
+                           <button type="submit" class="send_bt" id="sendMessageButton">Send</button>
+                         </div>
+                       </form>
+                       	<div class="right">
+                       		<div class="social_icon">
+                       			<ul>
+                       				<li><a href="{{params['fb_uri']}}" target="_blank"><img src="{{url_for('static',filename ='images/fb-icon.png')}}"></a></li>
+                       				<li><a href="{{params['twitter_uri']}}" target="_blank"><img src="{{url_for('static',filename ='images/twitter-icon.png')}}"></a></li>
+                       				<li><a href="{{params['linkedin_uri']}}" target="_blank"><img src="{{url_for('static',filename ='images/in-icon.png')}}"></a></li>
+                       				<li><a href="{{params['insta_uri']}}" target="_blank"><img src="{{url_for('static',filename ='images/instagram-icon.png')}}"></a></li>
+                       			</ul>
+                       		</div>
+                       	</div>
+                       </div>
+                    </div>
+		    		</div>
+             <div class="col-md-6">
+                <div class="map_section">
+                       <div class="row">
+                  <div class="col-sm-12">
+                     <div class="full map_section">
+                        <iframe
+                           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.258129722014!2d74.24574187510076!3d31.695193737915822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39192182d47b14f5%3A0x2d6201b0e19137d!2sLahore%20Fort!5e0!3m2!1sen!2s!4v1663953761578!5m2!1sen!2s"
+                           width="135%" height="300px%" allowfullscreen="" loading="lazy"
+                           referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div id="map"></div>
+                     </div>
+                        </div>
+                  </div>
+               </div>
+                 </div>
+             </div>
+          </div>
+       </div>
+       <div class="copyright_section">
+          <p class="copyright_text">Copyright 2023 All Right Reserved By EVMS</p>
+       </div>
+   </div>
+</div>
+<!--footer section end -->
+
+   <!-- Javascript files-->
+   <script src="{{url_for('static',filename ='js/jquery.min.js')}}"></script>
+   <script src="{{url_for('static',filename ='js/popper.min.js')}}"></script>
+   <script src="{{url_for('static',filename ='js/bootstrap.bundle.min.js')}}"></script>
+   <script src="{{url_for('static',filename ='js/jquery-3.0.0.min.js')}}"></script>
+   <script src="{{url_for('static',filename ='js/plugin.js')}}"></script>
+   <!-- sidebar -->
+   <script src="{{url_for('static',filename ='js/jquery.mCustomScrollbar.concat.min.js')}}"></script>
+   <script src="{{url_for('static',filename ='js/custom.js')}}"></script>
+   <!-- javascript --> 
+   <script src="{{url_for('static',filename ='js/owl.carousel.js')}}"></script>
+   <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+     <script>
+      $(document).ready(function () {
+            $(".fancybox").fancybox({
+               openEffect: "none",
+               closeEffect: "none"
+            });
+         });
+     </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block body %}
+  <div style="text-align: center;">
+  
+    <p style="font-size: 30px; color: rgb(255, 255, 255);">Admin</p>
+    <p style="font-size: 30px; color: rgb(145, 71, 2);"> Admin Login</p>
+    <form onsubmit="return validateForm()">
+      <label for="QrCode" style="color:rgb(0,0,0); font-size: 20px";>QrCode:</label>
+      <input type="text" id="QrCode" name="QrCode" placeholder=" Scan Your QrCode" required>
+      <br>
+      <button type="submit" class="login-btv">NEXT</button>
+  
+  
+    </form>
+  
+    <script>
+      function validateForm() {
+        const qrCode = document.getElementById("QrCode").value;
+
+        if (!qrCode.match(/^\d{7,30}$/)) {
+          alert("QrCode must be a 7-30-digit number.");
+          document.getElementById("QrCode").value = "";
+          document.getElementById("QrCode").focus();
+          return false;
+        }
+        else {
+          window.location.href = 'welcome';
+        }
+
+        return false;
+      }
+    </script>
+  </div>
+
+  {% endblock %}

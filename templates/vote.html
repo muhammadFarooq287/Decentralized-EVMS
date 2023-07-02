@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+{% block body %}
+  <!--banner section end -->
+  <p style="font-size: 30px; color: rgb(255, 255, 255);"> asd</p>
+  <button class="login-btz" onclick="location.href='/logout'">Logout</button>
+  <div style="text-align: center;">
+    <p style="font-size: 30px; color: rgb(255, 255, 255);">VOTER</p>
+    <p style="font-size: 30px; color: rgb(25, 11, 57);">Welcome VOTER </p>
+      <button class="login-btr" onclick="location.href='https://mumbai.polygonscan.com/address/0x818f7ff1375c59dcb3a8b47e21128d2ef1d45bcc#writeContract'">VOTE</button>
+      <button  class="login-btr" onclick= "location.href='result'">Results</button>
+  </div>
+ 
+<div>
+  <br>
+  <br>
+  <br>
+</div>
+<div style="text-align: center;">
+  <h1 class="fron_text"> Candidate Data</h1>
+</div>           
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Sno</th>
+      <th>Name</th>
+      <th>CNIC</th>
+      <th>Party</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    {% for candidate in candidates %}
+
+
+    <tr>
+      <td>{{candidate.sno}}</td>
+      <td>{{candidate.name}}</td>
+      <td>{{candidate.cnic}}</td>
+      <td>{{candidate.party}}</td>
+      <td>{{candidate.date}}</td>
+    </tr>
+
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+
+  </tbody>
+</table>
+</div>
+
+
+
+  {% endblock %}

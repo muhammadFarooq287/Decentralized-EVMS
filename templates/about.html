@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block body %}
+	<!--about section start -->
+  <div class="about_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="tablet"><img src="{{url_for('static',filename ='images/tablet-img.png')}}"></div>
+        </div>
+        <div class="col-md-6">
+          <div class="about_taital">
+            <div class="about_text">About <span style="color: #c6610f;">Us</span></div>
+            <p class="dolor_text">We are a team of experienced professionals dedicated to providing safe and secure
+              electronic voting management systems.
+              Our mission is to ensure fair and transparent elections through advanced technology solutions that are
+              user-friendly,
+              efficient, and reliable.
+  
+              Our slogan, "Safe and Secure Elections," reflects our commitment to maintaining the highest standards of
+              security and
+              privacy for our clients and their voters. We use the latest encryption technologies, multi-factor
+              authentication
+              protocols, and real-time monitoring to safeguard every aspect of the voting process, from voter registration
+              to results
+              reporting.</p>
+            <div class="read_more"><a href="#">Go To Top</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+	<!--about section end -->
+  {% endblock %}
+	

@@ -1,0 +1,132 @@
+{% extends "layout.html" %}
+{% block body %}
+  <!--banner section end -->
+  <p style="font-size: 30px; color: rgb(255, 255, 255);"> asd</p>
+  <button class="login-btz" onclick="location.href='/logout'">Logout</button>
+  <div style="text-align: center;">
+    <p style="font-size: 30px; text-align: left; color: rgb(255, 255, 255);">Admin</p>
+    <p style="font-size: 30px; color: rgb(25, 11, 57);">Welcome Admin </p>
+      <button class="login-btr" onclick="location.href='Add-new-voter/0'">Add New Voter</button>
+      <button  class="login-btr" onclick="location.href='Add_candidate/0'">Add New Candidate</button>
+      <button  class="login-btr" onclick= "location.href='result'">Results</button>
+  </div>
+  
+  <div>
+    <br>
+    <br>
+    <br>
+  </div>
+  <div style="text-align: center;">
+    <h1 class="fron_text"> Admin Data</h1>
+  </div>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Sno</th>
+        <th>Name</th>
+        <th>CNIC</th>
+        <th>QR Code</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      {% for admin in admins %}
+
+
+      <tr>
+        <td>{{admin.sno}}</td>
+        <td>{{admin.name}}</td>
+        <td>{{admin.cnic}}</td>
+        <td>{{admin.qrCode}}</td>
+        <td>{{admin.date}}</td>
+      </tr>
+
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<div>
+  <br>
+  <br>
+  <br>
+</div>
+<div style="text-align: center;">
+  <h1 class="fron_text"> Candidate Data</h1>
+</div>           
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Sno</th>
+      <th>Name</th>
+      <th>CNIC</th>
+      <th>Party</th>
+      <th>Date</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    {% for candidate in candidates %}
+
+
+    <tr>
+      <td>{{candidate.sno}}</td>
+      <td>{{candidate.name}}</td>
+      <td>{{candidate.cnic}}</td>
+      <td>{{candidate.party}}</td>
+      <td>{{candidate.date}}</td>
+      <td><a href="/Add_candidate/{{candidate.sno}}"><button class = "send_bt">Edit</button></a></td>
+      <td><a href="/delete_candidate/{{candidate.sno}}"><button class = "send_bt">Delete</button></a></td>
+    </tr>
+
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+
+<div>
+  <br>
+  <br>
+  <br>
+</div>
+<div style="text-align: center;">
+  <h1 class="fron_text"> Voter Data</h1>
+</div>            
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Sno</th>
+      <th>Name</th>
+      <th>CNIC</th>
+      <th>QR Code</th>
+      <th>Date</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    {% for voter in voters %}
+
+
+    <tr>
+      <td>{{voter.sno}}</td>
+      <td>{{voter.name}}</td>
+      <td>{{voter.cnic}}</td>
+      <td>{{voter.qrCode}}</td>
+      <td>{{voter.date}}</td>
+      <td> <a href="/Add-new-voter/{{voter.sno}}"><button class = "send_bt">Edit</button></a></td>
+      <td><a href="/delete_voter/{{voter.sno}}"><button class = "send_bt">Delete</button></a></td>
+    </tr>
+
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+
+
+
+  {% endblock %}
