@@ -1,0 +1,2 @@
+###Decentralized-EVMS
+###The Final Year project of BS Electrical Engineering(Major: Computer) is Specifically chosen to solve major problem of Elections in Pakistan. I have used Biometric system and QR Code scanner for Primary security. QR Code of Every User's National Identity card is used to get information along with fingerprint for verification of registered and Eligible voter. Further Registration of voter and Candidate along with Casting of vote is done through Smart Contract on Polygon which is integrated with Frontend.
